@@ -1,90 +1,84 @@
-Analisis PCA dan FA pada Dataset Otomotif
+Analisis PCA dan FA pada Dataset Kendaraan
 
-Repositori ini berisi analisis Principal Component Analysis (PCA) dan Factor Analysis (FA) pada dataset otomotif dengan variabel yang dipilih.
+Deskripsi Proyek
 
-Variabel yang Digunakan
+Repositori ini berisi analisis Principal Component Analysis (PCA) dan Factor Analysis (FA) menggunakan bahasa pemrograman R. Studi ini bertujuan untuk mengeksplorasi hubungan antara variabel-variabel terkait spesifikasi kendaraan serta mengurangi dimensi dataset tanpa kehilangan informasi penting.
 
-Analisis dilakukan pada variabel berikut:
+Dataset
 
-Price_in_thousands
+Analisis dilakukan menggunakan dataset yang berisi informasi tentang berbagai kendaraan. Variabel yang digunakan dalam analisis adalah sebagai berikut:
 
-Engine_size
+Price_in_thousands: Harga kendaraan dalam ribuan dolar
 
-Horsepower
+Engine_size: Ukuran mesin kendaraan (dalam liter)
 
-Wheelbase
+Horsepower: Daya maksimum kendaraan (dalam HP)
 
-Width
+Wheelbase: Jarak sumbu roda (dalam inci)
 
-Length
+Width: Lebar kendaraan (dalam inci)
 
-Curb_weight
+Length: Panjang kendaraan (dalam inci)
 
-Fuel_capacity
+Curb_weight: Berat kosong kendaraan (dalam pound)
 
-Fuel_efficiency
+Fuel_capacity: Kapasitas bahan bakar (dalam galon)
 
-Power_perf_factor
+Fuel_efficiency: Efisiensi bahan bakar (mil per galon)
 
-Tujuan Analisis
-
-Principal Component Analysis (PCA):
-
-Mengurangi dimensi dataset sambil mempertahankan informasi sebanyak mungkin.
-
-Mengidentifikasi komponen utama yang mempengaruhi karakteristik kendaraan.
-
-Factor Analysis (FA):
-
-Mengidentifikasi faktor tersembunyi yang mendasari hubungan antar variabel.
-
-Menganalisis apakah variabel dapat dikelompokkan berdasarkan korelasi mereka.
+Power_perf_factor: Faktor kinerja daya kendaraan
 
 Metodologi
 
-Preprocessing Data
+Preprocessing Data: Membersihkan dataset dan menangani data yang hilang.
 
-Menghapus nilai yang hilang
+Eksplorasi Data: Statistik deskriptif dan visualisasi data.
 
-Melakukan standarisasi data
+Principal Component Analysis (PCA):
 
-PCA
+Normalisasi data
 
-Menentukan jumlah komponen utama yang optimal berdasarkan scree plot dan proporsi varians yang dijelaskan
+Analisis komponen utama
 
-Menafsirkan komponen utama
+Interpretasi hasil
 
-FA
+Factor Analysis (FA):
 
-Menentukan jumlah faktor optimal menggunakan kriteria eigenvalue >1 dan scree plot
+Menentukan jumlah faktor
 
-Menafsirkan faktor berdasarkan muatan faktor (factor loadings)
+Rotasi faktor untuk interpretasi yang lebih baik
 
-Hasil dan Interpretasi
+Evaluasi hasil
 
-Visualisasi varians yang dijelaskan oleh PCA
+Interpretasi & Kesimpulan
 
-Muatan faktor dan struktur faktor dari FA
+Struktur Repositori
 
-Implikasi hasil terhadap analisis otomotif
+├── data/               # Dataset mentah dan hasil preprocessing
+├── scripts/            # Skrip R untuk analisis PCA dan FA
+├── results/            # Hasil analisis dan visualisasi
+├── README.md           # Dokumentasi proyek
+└── report/             # Laporan lengkap dalam format RMarkdown atau PDF
 
 Cara Menjalankan
 
-Analisis dilakukan menggunakan bahasa R dan dipublikasikan di RPubs.
-
-Clone repositori:
+Clone repositori ini:
 
 git clone https://github.com/username/repo-name.git
 cd repo-name
 
-Jalankan skrip R yang tersedia:
+Jalankan RStudio dan buka skrip dalam folder scripts/.
 
-source("pca_fa_analysis.R")
+Jalankan skrip secara berurutan untuk melakukan analisis.
 
-Publikasi Hasil
+Hasil Analisis
 
-Hasil analisis dapat diakses di RPubs: Tautan RPubs
+Laporan lengkap akan tersedia dalam folder report/ setelah eksekusi skrip selesai.
+
+Kontributor
+
+Nama Anda (@GitHubUsername)
 
 Lisensi
 
-Repositori ini tersedia di bawah lisensi MIT.
+Repositori ini dirilis di bawah lisensi MIT. Silakan gunakan dan modifikasi sesuai kebutuhan.
